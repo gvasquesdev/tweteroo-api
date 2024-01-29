@@ -28,10 +28,10 @@ public class UserModel {
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private Long id;
 
-    @Column(length = 150, nullable = false)
-    private String avatar;
-
     @Column(length = 100, nullable = false)
     private String username;
+
+    @Column(length = 500, nullable = false)
+    private String avatar;
 
 }
